@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
     create_table :users do |t|
       t.string :user_name
       t.string :user_email , unique: true , index: true
-       t.integer :phone_number , unique: true , index: true
+       t.varchar(10) :phone_number , unique: true , index: true
        t.timestamps
    end
   end

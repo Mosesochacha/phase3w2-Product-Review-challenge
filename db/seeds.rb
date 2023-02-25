@@ -8,7 +8,7 @@ rand(1...15).times do
   user = User.create(
     user_name: Faker::Name.first_name + " " + Faker::Name.last_name,
     user_email: Faker::Internet.unique.email,
-    phone_number: Faker::PhoneNumber.unique.phone_number
+    phone_number: Faker::Number.unique.number(digits: 11)[1..-1]
   )
   users.push(user)
 end
