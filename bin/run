@@ -1,0 +1,7 @@
+#!/user/bin/env ruby
+
+require_relative "../config/environment.rb"
+
+# puts "#{Product.get_reviews}"
+puts "User instance #{Review.user}"
+puts "Review instance for products #{Review.product}"
