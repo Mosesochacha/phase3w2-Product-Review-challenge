@@ -12,7 +12,6 @@ def self.reviews
 end
 # Returns a collection of all the Users who reviewed the Product
 def self.users 
-
   User.all.map{ |products| products.reviews }
 end
 end
