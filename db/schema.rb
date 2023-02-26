@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(version: 2023_02_25_202030) do
     t.integer "star_rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "products_id"
-    t.integer "users_id"
-    t.index ["products_id"], name: "index_reviews_on_products_id"
-    t.index ["users_id"], name: "index_reviews_on_users_id"
+    t.integer "product_id"
+    t.integer "user_id"
+    t.index ["product_id"], name: "index_reviews_on_product_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,6 +40,6 @@ ActiveRecord::Schema.define(version: 2023_02_25_202030) do
     t.index ["user_email"], name: "index_users_on_user_email"
   end
 
-  add_foreign_key "reviews", "products", column: "products_id"
-  add_foreign_key "reviews", "users", column: "users_id"
+  add_foreign_key "reviews", "products"
+  add_foreign_key "reviews", "users"
 end

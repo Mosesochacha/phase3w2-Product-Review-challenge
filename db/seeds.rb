@@ -29,8 +29,8 @@ users.each do |user|
     Review.create(
       star_rating: rand(1..5),
       comments: Faker::Lorem.sentence,
-      users_id: user.id, # add comma after user_id
-      products_id: products.sample.id # use sample to select a random product from array
+      user_id: user.id, # add comma after user_id
+      product_id: products.sample.id # use sample to select a random product from array
     )
   end
 end

@@ -2,6 +2,7 @@
 
 require_relative "../config/environment.rb"
 
-# puts "#{Product.get_reviews}"
-puts "User instance #{Review.user}"
-puts "Review instance for products #{Review.product}"
+# puts "User instance #{Review.user}"
+#  puts "Review instance for products #{Review.product}"
+#  puts "collection of al r for products #{Product.reviews}"
+puts " collection of all the Users who reviewed the Product#{Product.users}"
