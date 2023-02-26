@@ -1,14 +1,16 @@
 class Review < ActiveRecord::Base
-  belongs_to :users
-  belongs_to :products
-# Returns the User instance for this Review
-  def self.user
-    User.all
-  end
-  # Returns the Product instance for this Review
-  def self.product
-    Product.all
+  belongs_to :user
+  belongs_to :product
+
+  def user
+   user= User.find(self.user_id)
+   user.save
+   user
   end
 
-  
+  def product
+    Product.find(self.product_id)
+  end
 end
+
+
