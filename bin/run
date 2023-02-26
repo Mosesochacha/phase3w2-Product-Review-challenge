@@ -10,14 +10,16 @@ reviews.each do |review|
 end
 
 
-# production= Product.all
-#   production.each do |review|
-#   # p review.users
-#  p review.reviews
-# end
-
-# people= User.all
-#   people.each do |people|
-#    p people.products
-#  p people.reviews
-# end
+production= Product.all
+  production.each do |review|
+   p review.users
+    #  p review.print_all_review
+    puts review.average_rating
+end
+ 
+people= User.all
+  people.each do |people|
+   p people.products
+ p people.reviews
+ puts people.favorite_product
+end
