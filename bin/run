@@ -2,11 +2,12 @@
 
 require_relative "../config/environment.rb"
 
-# reviews = Review.all
-# reviews.each do |review|
-#   p review.user
-#  p review.product
-# end
+reviews = Review.all
+reviews.each do |review|
+  p review.user
+ p review.product
+ p review.print_review
+end
 
 
 # production= Product.all
