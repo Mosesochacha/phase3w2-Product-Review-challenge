@@ -10,7 +10,9 @@ def users
 end
 
 def print_all_reviews
-  puts "Review for #{self.product_name} by #{self.users.user_name}: #{self.star_rating}. #{self.comments}"
+  newReviews = Review.all.each do |x| 
+  puts x.print_review
+  end
 end
 
 def average_rating
