@@ -4,18 +4,18 @@ require_relative "../config/environment.rb"
 
 # reviews = Review.all
 # reviews.each do |review|
-#   p review.user
-#  p review.product
-#  p review.print_review
+#   puts review.user
+#   puts review.product
+#   p review.print_review
 # end
 
 
-production= Product.all
-  production.each do |review|
-  #  p review.users
-    review.print_all_reviews
-    # puts review.average_rating
-end
+# production= Product.all
+#   production.each do |review|
+#    p review.users
+#   p  review.print_all_reviews
+#     puts review.average_rating
+# end
  
 # people= User.all
 #   people.each do |people|
