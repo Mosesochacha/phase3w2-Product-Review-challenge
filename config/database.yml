@@ -1,7 +1,9 @@
 development:
   adapter: sqlite3
-  database: db/developments.sqlite3
+  database: db/development.sqlite3
+  autovacuum: false
 
-review:
+test:
   adapter: sqlite3
-  database: db/reviews.sqlite3
+  database: db/test.sqlite3
+  autovacuum: false

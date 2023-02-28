@@ -20,12 +20,12 @@ gem "sqlite3", "~> 1.4"
 # Require all files in a folder
 # https://github.com/jarmo/require_all
 gem "require_all"
-
+ gem "faker", "~> 2.18"
 # These gems will only be used when we are running the application locally
 group :development do
   # Used to generate seed data
   # https://github.com/faker-ruby/faker
-  gem "faker", "~> 2.18"
+ 
   
   gem "pry"
 end
@@ -34,5 +34,6 @@ end
 group :test do
   gem "database_cleaner"
   gem "rspec"
+  
 end
 
