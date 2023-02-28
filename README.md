@@ -46,7 +46,9 @@ Then run the command below to add data into your database
       And for Users comments out from line 20 to line 25
 
 # Entity Relationship Diagram
-- In  Product has many Users, a User has many Products, and a Review belongs to a User and to a Product. Product-User is a many-to-many relationship.
+- In  Product has many Users, a User has many Products, and a Review belongs to a User and to a Product. Product-User is a many-to-many relationship. Below is how i realeted using ERM Diagram
+
+<img src="ERDDiagram1.jpg" height="200" alt="" width="400" srcset="">
 
 ## Description
 - E-Commerce Product Reviews System
